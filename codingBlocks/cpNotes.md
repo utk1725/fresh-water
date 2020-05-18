@@ -75,4 +75,8 @@ bool numericCompare(pair<string,string> str1, pair<string,string> str2){
     return convertToInt(key1) < convertToInt(key2);
 }
 ```
- 
+<b>Sorting Algos</b>
+##### <u>Selection sort</u>
+* Find the minimum element in the array and swap it with present index element of the array. Increase 
+  the index and repeat the same process
+* 
