@@ -52,6 +52,25 @@ void merge_sort(vector<int> &ary, int low, int high){
     merge_sort(ary, mid+1, high);
     conquer_sorted_arrays(ary, low, mid, high);
 }
+int  partition(vector<int> &ary, int start, int end){
+    int pivot_element = ary[end];
+    int swaped_ind = start-1;
+    for(int ind=start; ind<end; ind++){
+        if(ary[ind]<=pivot_element){
+            swaped_ind++;
+            if(swaped_ind != ind) swap(ary[swaped_ind], ary[ind]);
+        }
+    }
+    swaped_ind++;
+    swap(ary[swaped_ind], ary[end]);
+    return swaped_ind;
+}
+void quick_sort(vector<int> &ary, int start, int end){
+    if(start>=end) return;
+    int pivot_ind = partition(ary, start, end);
+    quick_sort(ary, start, pivot_ind-1);
+    quick_sort(ary, pivot_ind+1, end);
+}
 int main(){
     int ary_size;
     cin >> ary_size;
@@ -60,7 +79,8 @@ int main(){
 //    selection_sort(ary, ary_size);
 //    bubble_sort(ary, ary_size);
 //    insertion_sort(ary, ary_size);
-    merge_sort(ary, 0, ary_size-1);
+//    merge_sort(ary, 0, ary_size-1);
+      quick_sort(ary, 0, ary_size-1);
     for(int ind=0; ind<ary_size; ind++) cout<<ary[ind]<<" ";
     return 0;
 }
