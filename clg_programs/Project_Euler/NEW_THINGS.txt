@@ -1,0 +1,43 @@
+
+
+gcd program
+
+int gcd(int a, int b) {
+  if (b == 0) return a;
+  return gcd(b, a%b);
+}
+
+lcm of a,b = a * b / gcd(a,b);
+
+we can use %lld in output answer
+
+in case of prime number program definately use sqrt function
+
+if we want to work on a long number of each digits. Then we can take that input string
+
+If any program needs n prime numbers it it better to generate n prime numbers into any array before actual program
+
+
+At Google, I asked a guy (born and raised in the US, native English speaker, etc) a question where the solution involved creating a mapping from each letter to how many times it appeared in a string. I asked him how big his array would be. (I do this to test whether he's thinking about lowercase and uppercase, all ASCII characters, etc.)
+
+Considering all ASCII, 256, would be right.
+
+Insteda of making initial values of zeros and to compare after just fix one value and compare with that value.
+
+for caching concept in programming we can use array increment model
+
+aobe two lines are from 14th program of eular project
+
+converting lower case to upper case is lwr_chart=lwr_chart+'A'-'a';
+
+int no_of_brck(int a,int b,int c,int d){
+	switch(a);
+	case b:
+		return 1;
+	case c:
+		return 2;
+	case d:
+		return 3;
+	default return 0;
+}	//this will give error becase we are using case statements
+//using b,c,d in return statements also give error

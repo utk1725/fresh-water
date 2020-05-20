@@ -1,0 +1,58 @@
+    C
+    c++
+    oop fundatmentals
+    data structure
+    communication skill
+    experince on any programming language will be added advanatage i personally thing you must have (e.g PHP, .net, JAVA, python)
+    if you have done any project in your enginnering will be good it will help to get job
+
+In angolore
+Product-based companies like:
+
+    Amazon
+    Microsoft
+    Google
+    LinkedIn
+    Adobe
+    Flipkart
+    Cisco
+    Juniper networks
+    Zynga
+    Nvidia
+    Synopsys
+    InMobi
+    Cadence
+    Qualcomm
+    Intel
+    Qubole
+
+And among investment banks for software roles:
+
+    Goldman Sachs
+    Morgan Stanley
+    JP Morgan & Chase
+    Credit Suisse
+    Bank of America
+
+    Algorithms and Algorithmic Complexity (big O)
+    Data Structures
+    Design Patterns
+    Compilers (implementations)
+    Programming Languages (implementations)
+    Operating Systems and low level architecture
+    Machine Learning (implementations)
+    Finite State Machines
+    Type Systems, Category Theory
+    Search
+    Common vocabulary, jargon, and conventions
+    Artificial Intelligence
+
+
+
+
+
+When I first read the comments for the Quake III Arena "Fast Inverse Square Root Algorithm" and shared it with some of my older students, we all definitely had a good laugh. Long story short the algorithm uses some very clever and opaque math and bit manipulation to create an excellent initial guess for the solution before beginning Newton's method of determining square roots. Which is documented as:
+
+i = * ( long * ) &y; // evil floating point bit level hacking
+
+i = 0x5f3759df - ( i >> 1 ); // what the fuck?

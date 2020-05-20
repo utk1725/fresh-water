@@ -1,0 +1,50 @@
+
+
+You are given an integer N. Can you find the smallest integer M, such that M is divisible by N. However, M must satisfy the following properties.
+
+    It shouldn't contain zeroes in its decimal representation.
+    The sum of its digits must be greater than or equal to its product.
+
+Your task is to output the number of digits of M in its decimal representation.
+
+Input Format
+A single line which contains the integer N.
+
+Output Format
+Output the number of digits of M in it's decimal representation.
+
+Constraints
+1<=N<=30000
+N is not divisible by 10
+
+Sample Input #0
+
+1
+
+Sample Output #0
+
+1
+
+Explanation #0
+
+1 is divisible by 1 and it doesn't contain any zeroes in its decimal representation. The sum of its digits is equal to its product. The digits in M is 1. Hence the answer.
+
+Sample Input #1
+
+9
+
+Sample Output #1
+
+1
+
+Explanation #1
+
+the smalles integer M is 9 itself. As 9 is divisible by 9 and it has no zeroes in its decimal representation. The sum of its digits is equal to its product. The number of digits is 1 in 9 hence the answer 1.
+
+Note
+
+50 testcases will be run on submission during contest. An extra 50 testcases will be run on the highest scoring submission. These hidden testcases carries more weightage.
+
+Timelimits
+
+Timelimits for this challenge can be seen here
