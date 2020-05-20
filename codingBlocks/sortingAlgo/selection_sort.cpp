@@ -36,6 +36,22 @@ void insertion_sort(vector<int> &ary, int ary_size){
         ary[sorted_ind+1] = hand;
     }
 }
+void conquer_sorted_arrays(vector<int> &ary, int low, int mid, int high){
+    vector<int> tmp;
+    int fst_ary_ind=low, snd_ary_ind=mid+1;
+    while(fst_ary_ind<=mid && snd_ary_ind<=high)
+        ary[fst_ary_ind]<ary[snd_ary_ind]?tmp.push_back(ary[fst_ary_ind++]):tmp.push_back(ary[snd_ary_ind++]);
+    while(fst_ary_ind<=mid) tmp.push_back(ary[fst_ary_ind++]);
+    while(snd_ary_ind<=high) tmp.push_back(ary[snd_ary_ind++]);
+    for(int ind=0;ind<tmp.size();ind++) ary[low++]=tmp[ind];
+}
+void merge_sort(vector<int> &ary, int low, int high){
+    if(low>=high) return;
+    int mid = (low+high)/2;
+    merge_sort(ary, low, mid);
+    merge_sort(ary, mid+1, high);
+    conquer_sorted_arrays(ary, low, mid, high);
+}
 int main(){
     int ary_size;
     cin >> ary_size;
@@ -43,7 +59,8 @@ int main(){
     for(int ind=0; ind<ary_size; ind++) cin>>ary[ind];
 //    selection_sort(ary, ary_size);
 //    bubble_sort(ary, ary_size);
-    insertion_sort(ary, ary_size);
+//    insertion_sort(ary, ary_size);
+    merge_sort(ary, 0, ary_size-1);
     for(int ind=0; ind<ary_size; ind++) cout<<ary[ind]<<" ";
     return 0;
 }
