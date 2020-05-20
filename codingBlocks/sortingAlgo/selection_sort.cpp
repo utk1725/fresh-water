@@ -25,13 +25,25 @@ void bubble_sort(vector<int> &ary, int ary_size){
         }
     }
 }
+void insertion_sort(vector<int> &ary, int ary_size){
+    for(int iter=1; iter<ary_size; iter++){
+        int hand = ary[iter];
+        int sorted_ind = iter-1;
+        while(sorted_ind>=0 && ary[sorted_ind]>hand){
+            ary[sorted_ind+1] = ary[sorted_ind];
+            sorted_ind--;
+        }
+        ary[sorted_ind+1] = hand;
+    }
+}
 int main(){
     int ary_size;
     cin >> ary_size;
     vector<int> ary(ary_size);
     for(int ind=0; ind<ary_size; ind++) cin>>ary[ind];
 //    selection_sort(ary, ary_size);
-    bubble_sort(ary, ary_size);
+//    bubble_sort(ary, ary_size);
+    insertion_sort(ary, ary_size);
     for(int ind=0; ind<ary_size; ind++) cout<<ary[ind]<<" ";
     return 0;
 }
