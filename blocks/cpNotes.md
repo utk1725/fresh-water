@@ -120,4 +120,6 @@ while calling bubble_sort(ary, ary_size, cust_compare);
   the same type
   * `Overlapping subproblems`: There exists subproblem of same. So here, we should not
    count soulution for that subproblem again and again.
-   
+* DP problems can be solved in two ways. Top-down approach and Bottom-up approach
+* Top-down: Recursion + memozation
+* Bottom-up: 
