@@ -113,3 +113,11 @@ void bubble_sort(int ar[], int n, bool (&giveany)(int a, int b)){
 }
 while calling bubble_sort(ary, ary_size, cust_compare);
 ```
+###DP
+* Remember the solutions of sub problems which we have already computed
+* Where we can apply DP?
+  * `Optimal substructure`: We should be able to find smaller problems of 
+  the same type
+  * `Overlapping subproblems`: There exists subproblem of same. So here, we should not
+   count soulution for that subproblem again and again.
+   
