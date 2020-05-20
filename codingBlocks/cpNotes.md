@@ -76,7 +76,40 @@ bool numericCompare(pair<string,string> str1, pair<string,string> str2){
 }
 ```
 <b>Sorting Algos</b>
-##### <u>Selection sort</u>
-* Find the minimum element in the array and swap it with present index element of the array. Increase 
+* Selection sort: Find the minimum element in the array and swap it with present index element of the array. Increase 
   the index and repeat the same process
-* 
+* Bubble sort always pushes largest element to end of the array
+* Insertion sort: Always keep present index element into correct position of already sorted array.
+  Keep increment the index till end of the array
+* Merge sort: Divide the array continuously and merge already sorted arrays
+* Pick a pivot and keep the pivot in it's correct position of the array. i.e. This results
+  keeping small elements than pivot to pivot left side and larger to right side. Then apply 
+  same process to the arrays which are left to pivot and right to pivot continuously.
+
+#####C++ STL inbuilt sort function
+* Include header file called `#include<algorithm>`
+* sort() function requires a container
+* sort an array: `sort(array, array + ary_size)`
+* sort elements in decreasing order
+```
+bool cust_compare(int num1, int num2){
+    return num1>num2;
+}
+sort(array, array + ary_size, cust_compare);
+```
+* Here we are sending function name as a parameter to another function.
+* This is very useful comparing objects, strings etc...
+* How to pass a function as a parameter
+```
+bool cust_compare(int num1, int num2){
+    return num1>num2;
+}
+void bubble_sort(int ar[], int n, bool (&giveany)(int a, int b)){
+    for(int outerforlooplogic.....){
+        for(int innerforlooplogic...){
+            if(
+        }
+    }   
+}
+while calling bubble_sort(ary, ary_size, cust_compare);
+```
