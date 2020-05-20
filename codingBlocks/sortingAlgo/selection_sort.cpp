@@ -18,12 +18,20 @@ void selection_sort(vector<int> &ary, int ary_size){
         swap(ary[smallest_ind], ary[ind]);
     }
 }
+void bubble_sort(vector<int> &ary, int ary_size){
+    for(int iter=0; iter<ary_size; iter++){
+        for(int ind=0; ind<ary_size-iter-1;ind++){
+            if(ary[ind] > ary[ind+1]) swap(ary[ind], ary[ind+1]);
+        }
+    }
+}
 int main(){
     int ary_size;
     cin >> ary_size;
     vector<int> ary(ary_size);
     for(int ind=0; ind<ary_size; ind++) cin>>ary[ind];
-    selection_sort(ary, ary_size);
+//    selection_sort(ary, ary_size);
+    bubble_sort(ary, ary_size);
     for(int ind=0; ind<ary_size; ind++) cout<<ary[ind]<<" ";
     return 0;
 }
