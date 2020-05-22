@@ -1,4 +1,5 @@
 * max number we can store using long long int is 10^18
+* Initialize vector of sie n with value 5: `vector<int> vect(n,5)`
 ##### <u>Numer of trailing zeros in n!</u>
 * Zero will be there if there is 10. But 10 will be present if there is one 2 and one 5 (5*2=10).
 * Number of occurrences of 5 always less than occurrences of 2. So, if we are able to count
@@ -119,7 +120,7 @@ while calling bubble_sort(ary, ary_size, cust_compare);
   * `Optimal substructure`: We should be able to find smaller problems of 
   the same type
   * `Overlapping subproblems`: There exists subproblem of same. So here, we should not
-   count soulution for that subproblem again and again.
+   count solution for that subproblem again and again.
 * DP problems can be solved in two ways. Top-down approach and Bottom-up approach
 * Top-down: Recursion + memozation
 * Bottom-up: 
