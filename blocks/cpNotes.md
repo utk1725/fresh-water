@@ -123,4 +123,37 @@ while calling bubble_sort(ary, ary_size, cust_compare);
    count solution for that subproblem again and again.
 * DP problems can be solved in two ways. Top-down approach and Bottom-up approach
 * Top-down: Recursion + memozation
-* Bottom-up: 
+* Bottom-up: Make a dp array. Fill smallest possible solution (This is exactly what we write in base case
+ in recursive approach). Find a way to traverse the dp(solution space). Calculate one solution after other.
+ 
+####Graph Ddata Structures
+<b>RealWorld examples</b>
+* Google Maps: (V: Landmarks/Cities, E:Roads)
+* Social Networking (FB, LinkedIn, Quora, Instagram)
+* Circuit Design (V: Resistors, E: Wire)
+* Routing Algorithms (V: Routers across the globe, E: Time taken for packets to flow)
+* Delivery Route for Vans (V: Routers across the globe, E: Roads)
+* Resolving Dependencies (V: API Calls.Software Installations, E: Dependencies between Tasks)
+* Graphs in Deep Learning (V: Neurons, E: Connection between them)
+* Web Document (DOM Tree) (V: Dom Elements, E: Connections)
+* Image Processing & Segmentation
+* Paint Bucket Tool/Connected Components (V: Pixels, E: Connections between Neighbouring pixels of same value)
+
+<b> Different ways to store Graph DataStructure</b>
+
+* <u>Adjacency Matrix</u>: 2D array of edges X edges matrix
+  * We can find edge between two vertex in O(1) time
+  * But even graph is small, we should use full memory
+  * Easy to find Neighbours. O(N) time
+* <u>Edge List</u>: `V={0,1,2,3} E=[(0,1)(0,2)(1,2)(2,1)(2,3)(3,2)]`
+* <u>Adjaceny List</u>: Vertex number and store all neighbours of that vertex in a List. We can use a HashMap of 
+Vertex as key and List of nodes as value.
+```
+0 -> 1,2
+1 -> 2
+2 -> 1,3
+3 -> 2
+```
+* We can find neighburs in O(neighbours) time
+* Effecient in memory
+* <u>Implicit Graph</u>: 2D array of 0's and 1's. 
