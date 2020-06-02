@@ -17,8 +17,8 @@ public:
     void printAdjList(){
         for(int i=0;i<v;i++){
             cout << "Vertex "<<i<<"->";
-            for(int nbr:l[i]){
-                cout <<nbr<<" ";
+            for(int neighbour:l[i]){
+                cout <<neighbour<<" ";
             }
             cout << endl;
         }
