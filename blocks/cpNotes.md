@@ -156,4 +156,15 @@ Vertex as key and List of nodes as value.
 ```
 * We can find neighburs in O(neighbours) time
 * Effecient in memory
-* <u>Implicit Graph</u>: 2D array of 0's and 1's. 
+* <u>Implicit Graph</u>: 2D array of 0's and 1's.
+
+<b>Graph Traversal </b>
+* BFS: 
+  * Iterative approach.
+  * Start from a node and try to reach it's neighbours of that node. 
+  * Since we need to go multiple neighbours of same node, we store
+   those nodes in data structures like queue. 
+  * This is same as level order traversal of tree.
+  * Whenever we put node in the queue, we mark that node as visited.
+  
+* DFS: Recursive approach
