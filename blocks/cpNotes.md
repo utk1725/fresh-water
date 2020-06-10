@@ -168,3 +168,25 @@ Vertex as key and List of nodes as value.
   * Whenever we put node in the queue, we mark that node as visited.
   
 * DFS: Recursive approach
+
+<b>CP</b>
+###### Setup sublime text:
+* Keep cpp, input.txt, output.txt file in same directory
+* Use layout, group options in view tab to make required arrangement of files
+* Use ctrl+shift+B to compile and run. Use ctrl+B to run again
+* Install formatter pacakge from tools->command palatte.
+* Install `SublimeAStyleFormatter`
+```
+ctrl+alt+f: Format current file
+ctrl+k, ctrl+f: Format current selection
+ctrl+x: Cut the current line
+ctrl+D: repeat the same line
+ctrl+D when clicked on a word, rename that word
+ctrl+ / : comment/uncomment
+ ```
+* pdbs is also set type of data structure. It has to extra functions.
+  * pdbs_set.order_of_key(element) gives index of the element in sorted order
+  * (*pdbs_set.find_by_order(element)) gives 
+  * If element is not present, it assumes and gives the index if that element
+   is present in the pdbs
+   
