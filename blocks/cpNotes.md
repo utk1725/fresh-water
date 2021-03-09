@@ -1,5 +1,11 @@
 * max number we can store using long long int is 10^18
 * Initialize vector of sie n with value 5: `vector<int> vect(n,5)`
+* cpp map & unordered_map: https://stackoverflow.com/a/3578247/5822768
+* <b>for(int element: array)</b>: This is how iterate when you don't need index of array/vector
+* for hashing better to use unordered_set. It internally uses hash map & all operations O(1) on avg. worstcase O(n)
+* sort(vec.begin(), vec.end())
+* return array like this {ele1, ele2}
+* 
 ##### <u>Numer of trailing zeros in n!</u>
 * Zero will be there if there is 10. But 10 will be present if there is one 2 and one 5 (5*2=10).
 * Number of occurrences of 5 always less than occurrences of 2. So, if we are able to count
@@ -156,8 +162,7 @@ Vertex as key and List of nodes as value.
 ```
 * We can find neighburs in O(neighbours) time
 * Effecient in memory
-* <u>Implicit Graph</u>: 2D array of 0's and 1's.
-
+* <u>Implicit Graph</u>: 2D array of 0's and 1's. 
 <b>Graph Traversal </b>
 * BFS: 
   * Iterative approach.
