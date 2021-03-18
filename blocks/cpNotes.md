@@ -2,10 +2,28 @@
 * Initialize vector of sie n with value 5: `vector<int> vect(n,5)`
 * cpp map & unordered_map: https://stackoverflow.com/a/3578247/5822768
 * <b>for(int element: array)</b>: This is how iterate when you don't need index of array/vector
+* adding to above point, when you don't know the type.  for(auto element: array)
 * for hashing better to use unordered_set. It internally uses hash map & all operations O(1) on avg. worstcase O(n)
 * sort(vec.begin(), vec.end())
 * return array like this {ele1, ele2}
-* 
+* boost::any variable_name; (any datatype is available in c++ using boost library): **#include "boost/any.hpp"**
+* convert type any to type int. any_cast<int>(a).... format is any_cast<targetType>(valueWhichNeedsConversion)
+* element.type() == typeid(int) --> chck if element type is int or not
+
+
+##### <u>Swap 3 numbers in asc</u>
+```
+if (a > c)
+   swap(a, c);
+
+if (a > b)
+   swap(a, b);
+
+//Now the smallest element is the 1st one. Just check the 2nd and 3rd
+
+if (b > c)
+   swap(b, c);
+ ```
 ##### <u>Numer of trailing zeros in n!</u>
 * Zero will be there if there is 10. But 10 will be present if there is one 2 and one 5 (5*2=10).
 * Number of occurrences of 5 always less than occurrences of 2. So, if we are able to count
