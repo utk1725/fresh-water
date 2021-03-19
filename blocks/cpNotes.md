@@ -9,6 +9,7 @@
 * boost::any variable_name; (any datatype is available in c++ using boost library): **#include "boost/any.hpp"**
 * convert type any to type int. any_cast<int>(a).... format is any_cast<targetType>(valueWhichNeedsConversion)
 * element.type() == typeid(int) --> chck if element type is int or not
+* swap is a buildin function in c++. swap(a,b) will swap the values of a & b
 
 
 ##### <u>Swap 3 numbers in asc</u>
