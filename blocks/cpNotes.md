@@ -10,6 +10,7 @@
 * convert type any to type int. any_cast<int>(a).... format is any_cast<targetType>(valueWhichNeedsConversion)
 * element.type() == typeid(int) --> chck if element type is int or not
 * swap is a buildin function in c++. swap(a,b) will swap the values of a & b
+* Initialize 2d vector with some value `vector<vector<int>> vec( n , vector<int> (m, 0))`
 
 
 ##### <u>Swap 3 numbers in asc</u>
