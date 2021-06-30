@@ -13,7 +13,8 @@
 * Initialize 2d vector with some value `vector<vector<int>> vec( n , vector<int> (m, 0))`
 * In cpp, in recursion or pass by reference to functions while sending send them `function (vec, matrix)` and while receiving use `function(&vec, &matrix)`
 * Copy a vector vec1 to another vector vec2. `vector<int> vec2(vec1)` or `vector<int> vec2(vec1.begin(), vec1.end())`
-* Sort a 2D vector based on some condition `sort(vec.gebing(), vec.end(), [](vector<int> a, vector<int> b) {return a[0]<b[0]})`;
+* Sort a 2D vector based on some condition `sort(vec.gebing(), vec.end(), [](vector<int> a, vector<int> b) {return a[0]<b[0]})`
+* fastest way to reassign all values of vector to 0/other value `fill(v.begin(), v.end(), 0)`                                                                                                                                 
 
 
 ##### <u>Swap 3 numbers in asc</u>
