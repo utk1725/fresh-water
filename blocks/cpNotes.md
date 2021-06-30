@@ -13,6 +13,7 @@
 * Initialize 2d vector with some value `vector<vector<int>> vec( n , vector<int> (m, 0))`
 * In cpp, in recursion or pass by reference to functions while sending send them `function (vec, matrix)` and while receiving use `function(&vec, &matrix)`
 * Copy a vector vec1 to another vector vec2. `vector<int> vec2(vec1)` or `vector<int> vec2(vec1.begin(), vec1.end())`
+* Sort a 2D vector based on some condition `sort(vec.gebing(), vec.end(), [](vector<int> a, vector<int> b) {return a[0]<b[0]})`;
 
 
 ##### <u>Swap 3 numbers in asc</u>
@@ -35,6 +36,7 @@ if (b > c)
 * for every 5 numbers, one 5 will occur (5,10,15,...). So number of 5's n/5. But numbers like
 25, 50, 75, there have 25 in it, which means 5 is there two times. So final formula becomes
 * (n/5) + (n/5^2) + (n/5^3) + .... until last calculation becomes zero.
+
 
 ##### <u>Find Set bits in binary number</u>
 <b>Approach1:</b><br>
