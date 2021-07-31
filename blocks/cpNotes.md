@@ -14,9 +14,25 @@
 * In cpp, in recursion or pass by reference to functions while sending send them `function (vec, matrix)` and while receiving use `function(&vec, &matrix)`
 * Copy a vector vec1 to another vector vec2. `vector<int> vec2(vec1)` or `vector<int> vec2(vec1.begin(), vec1.end())`
 * Sort a 2D vector based on some condition `sort(vec.gebing(), vec.end(), [](vector<int> a, vector<int> b) {return a[0]<b[0]})`
-* fastest way to reassign all values of vector to 0/other value `fill(v.begin(), v.end(), 0)`                                                                                                                                 
+* fastest way to reassign all values of vector to 0/other value `fill(v.begin(), v.end(), 0)`   
+* We can use same heap type of comparator for vectors but need to use () while calling struct comparator
+  ```
+   struct array_sort_comparator{
+	bool operator()(vector<int> v1, vector<int> v2){
+		   return v1[0]<v2[0];
+	   }
+   };
 
+   struct min_heap_comparator{
+	bool operator()(int a, int b){
+		   return a>b;
+	   }
+   };
 
+   sort(times.begin(), times.end(), array_sort_comparator());
+	priority_queue<int, vector<int>, min_heap_comparator> min_heap;
+   ```
+                                                                                                                     
 ##### <u>Swap 3 numbers in asc</u>
 ```
 if (a > c)
