@@ -9,6 +9,17 @@ This is same as longest common subsequence. Subsequence means start anywhere and
 https://leetcode.com/problems/longest-increasing-subsequence/ <br>
 It's the variant of the Longest Increasing Subsequence problem. LIS of a list can end anywhere in the list. So, we need to find LIS at every index. LIS of an index is-> `LIS(i) = max(1, LIS(j)+1)` if `ary[i]>ary[j]` where `o>=j<i` <br>
 
-### Edit distance
+### 2) Edit distance
 https://leetcode.com/problems/edit-distance/description/ <br>
 ![dp_edit_distance](https://github.com/phani653/fresh-water/assets/25875160/e781889b-dfb7-49cc-b33c-169dc99465df)
+---
+
+### 3) Largest sum independent set <br>
+https://leetcode.com/problems/house-robber-iii/description/ <br>
+* 2 choices -> include the root and pick left child children + right child children (OR) don't include the root and take the left child + right child. <br>
+* Here instead of calculating the value for every child. Store the answer whenever you calculate it and re-use it.
+if root -> sum = 0 <br>
+
+
+### 4) 
+
