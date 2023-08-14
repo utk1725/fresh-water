@@ -30,4 +30,45 @@ https://leetcode.com/problems/house-robber/ <br>
 * if n=2 -> 01, 10, 11 -> 3 numbers possible <br>
 * general idea: - - - - => two choices for the first number 0 or 1. If 0 -> problem reduces to 01- - (i.e. if 0 is filled, definitely next numbers should be 1). By filling 0, the problem is reduced to f(n-2). If the first number is 1, the problem reduces to 1--- (the second number still has two choices if the first is 0). By filling 1, the problem is reduced to f(n-1). With this analysis, f(n) reduced to f(n-1) + f(n-2). And we already knew the answer for n=1 and n=2. The problem is simply a Fibonacci series problem where the first number is 2 and the second number is 3.
 
+### 5) Word break
+https://leetcode.com/problems/word-break/description/ <br>
 
+![word_break](https://github.com/phani653/fresh-water/assets/25875160/39906796-bd5a-41a5-b4cd-6033372dae52)
+
+Solution: https://leetcode.com/problems/word-break/submissions/
+>Traverse diagonally & split words
+
+```
+class Solution {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        Set<String> wordSet = new HashSet<>(wordDict);
+        int n = s.length();
+        boolean[][] dp = new boolean[n][n];
+
+        int rowEnd = n-1;
+        int colStart = 0;
+        while(rowEnd>=0 && colStart<n) {
+            
+            for(int i=0, j=colStart; i<=rowEnd && j<n; i++, j++) {
+                String entireWord = s.substring(i,j+1);
+                if(wordSet.contains(entireWord)) {
+                    dp[i][j] = true;
+                    continue;
+                }
+
+                for(int w1End=i; w1End<j; w1End++) {
+                    if(dp[i][w1End] && dp[w1End+1][j]) {
+                        dp[i][j] = true;
+                        break;
+                    }
+                }
+            }
+
+            rowEnd--;
+            colStart++;
+        }
+
+        return dp[0][n-1];
+    }
+}
+```
