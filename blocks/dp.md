@@ -1,6 +1,9 @@
 * Optimal substructure: A big problem can be expressed as a small problem
 * Overlapping subproblems: Duplicate computations
 ---
+- Neetocde
+- Aditya Verma (YT)
+  
 
 ### 1) Longest Increasing subsequence sum
 https://leetcode.com/problems/best-team-with-no-conflicts/description/ <br>
