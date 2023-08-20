@@ -72,3 +72,31 @@ class Solution {
     }
 }
 ```
+
+### 6) Longest Palindromic Subsequence
+https://leetcode.com/problems/longest-palindromic-subsequence/ <br>
+* Implementation logic is same as word break problem. We need to find answer for 1 len string, 2 len string, 3 len string ....
+  ![longest_palindromic_subseq](https://github.com/phani653/fresh-water/assets/25875160/a44cf238-0b9a-454b-bdb9-a0b1e696eeae)
+
+```
+class Solution {
+    public int longestPalindromeSubseq(String s) {
+        int n = s.length();
+        int[][] dp = new int[n][n];
+        for(int i=0; i<n; i++) {
+            dp[i][i] = 1;
+        }
+
+        int rowEnd = n-2;
+        int colStart = 1;
+        while(rowEnd>=0 && colStart<n) {
+            for(int row=0, col=colStart; row<=rowEnd && col<n; row++, col++) {
+                dp[row][col] = s.charAt(row)==s.charAt(col) ? 2+dp[row+1][col-1] : Math.max(dp[row][col-1], dp[row+1][col]);
+            }
+            rowEnd--;
+            colStart++;
+        }
+        return dp[0][n-1];
+    }
+}
+```
