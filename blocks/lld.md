@@ -19,8 +19,17 @@
 * Hide the details. Expose only interface. Restrict unauthorized access.
 * Data Hiding can be divided into two components
      * Encapsulation
-          * Binding data and methods to manipulate the data together in a single unit-class
+          * Binding data and methods to manipulate the data together in a single unit / class
+          * A good way to achieve this is by declaring all variables inside the class as private. Use getters and setters to communicate with outside classes
+          * Ex: private varaibles inside a class & getters and setters
      * Abstraction
+          * Simplifies the program structure
+          * Shows only required information. Shows what it does but hides how it does.
+      * Differences btwn Abstraction and Encapsulation
+         * Abstraction means to hide implementation using interface and abstract classes. & Encapsulation means to hide data using getter and setter functions.
+         * It highlights the work that the object performs & It deals with the internal working of the object.
+         * It hides unnecessary data to simplify the structure. & It restricts access to data to prevent its misuse.
+         * It focuses on the design level of the system. & It focuses on the application level of the system.
        
   
 
