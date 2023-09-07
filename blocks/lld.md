@@ -31,8 +31,23 @@
          * It hides unnecessary data to simplify the structure. & It restricts access to data to prevent its misuse.
          * It focuses on the design level of the system. & It focuses on the application level of the system.
        
-  
+  ##### Inheritance
+  * Create new classes from existing classes by taking all it's public methods and variables.
+  * When you see `is-a` relationship, then use inheritance. If there is no `is-a` relationship, we can't inherit
+  * Single-Inheritance, Multiple-inheritance, Multilevel-inheritance, Hierarchical-inheritance Hybrid-inheritance
+  * `class extends anotherClass`
 
+  ##### Polymorphism
+  * A method can do different things in each of it's child classes
+  * Static polymorphism:
+       * Method overloading
+       * Operator overloading
+  * Dynamic polymorphism:
+       * Method overriding
+
+#### OOAD 
+* Observe the system -> Determine the objects -> Establish the relation between objects -> Model and build the design
+* 
 
 #### Links
 * github interviewready/low-level design
