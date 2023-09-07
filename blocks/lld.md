@@ -15,6 +15,15 @@
    - If we want to share common code, use abstract classes. Inside the abstract class, a few methods can be implemented and shared with child classes in common
    - Interface is a contract
 
+###### Data Hiding (Encapsulation & Abstraction)
+* Hide the details. Expose only interface. Restrict unauthorized access.
+* Data Hiding can be divided into two components
+     * Encapsulation
+          * Binding data and methods to manipulate the data together in a single unit-class
+     * Abstraction
+       
+  
+
 
 #### Links
 * github interviewready/low-level design
