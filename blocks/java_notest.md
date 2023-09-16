@@ -1,6 +1,22 @@
 * LinkedList<TreeNode> que = new LinkedList<TreeNode><>();
     - que.poll() -> removes and returns the first element of the list
 * PriorityQueue<Integer> pq = new PriorityQueue<>();
+     * By default above `pq` is min-heap.
+     * If we want max heap, need to initialization such a way that `new PriorityQueue<>(Collections.reverseOrder())`;
+     * If we want some custom order, for example, we are inserting a treeNodes and we want to preserve some order
+          * if we pass to objects A, B to the compare function, and we want A to be present before B in the final sort order, we need to return -1/negative number. If we want A to be present after B in the final sort order, we need to return +1/positive number. Think number line and we want to put A, B on the number line. If we need A first, return -1. If we need A to the right end, return +1
+       ```
+       Comparator<Integer> comp = new Comparator<Integer>() {
+        @Override
+        public int compare(Integer n1, Integer n2) {
+            if(n1 > n2) {
+                return -1;
+            } else {
+                return 1;
+            }
+         }
+        };
+      ``` 
 * What is the difference between add and offer. why are the two methods, both doing the same thing?
 ```
   In Java, both the add and offer methods are used to add elements to a Queue, but there is a subtle difference in their behavior:
