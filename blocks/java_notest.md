@@ -16,8 +16,9 @@
             }
          }
         };
-      ``` 
-* What is the difference between add and offer. why are the two methods, both doing the same thing?
+      ```
+* Array sort comparator : `Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));`
+* What is the difference between add and offer? why are the two methods, both doing the same thing?
 ```
   In Java, both the add and offer methods are used to add elements to a Queue, but there is a subtle difference in their behavior:
 
