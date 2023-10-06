@@ -31,3 +31,6 @@
         If the queue is full, attempting to offer an element that would exceed the capacity will return false, indicating that the addition failed.
         Use offer when you want to handle the case where adding an element might not succeed gracefully without throwing an exception.
 ```
+
+* Need: to return int[][]. But this can't grow dynamically.And List<List<>> is not a best choice. as we can't convert back to 2D array.
+* Sol: `List<int[]> result = new LinkedList<>();` keep add to the result and at the end `return result.toArray(new int[result.size()][]);`
