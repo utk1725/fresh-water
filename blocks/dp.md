@@ -100,3 +100,6 @@ class Solution {
     }
 }
 ```
+
+
+* https://leetcode.com/problems/max-dot-product-of-two-subsequences/solutions/648528/Finally-a-diagram-to-make-understanding-easy/
